@@ -1,5 +1,4 @@
-# tugas2
-
+# Twice Website using Swiper
 ## Project setup
 ```
 npm install
