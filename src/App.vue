@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <HelloWorld />
   </div>
 </template>
 
@@ -23,6 +23,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  position: relative;
+  touch-action: none;
+  transition: all 700ms ease 0s;
+  width: 100% !important;
+  transform: none !important;
+}
+:root {
+    --swiper-theme-color: #fe97a4;
 }
 </style>
