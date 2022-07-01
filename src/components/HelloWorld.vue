@@ -355,21 +355,12 @@ export default {
       // configure Swiper to use modules
       effect: "fade",
       fadeEffect: { crossFade: true },
-      // speed: 1500,
-      // slidesPerView: 1,
-      // autoplay: { delay: 5000 },
-
 
       modules: [Pagination, EffectFade, Mousewheel],
       allowTouchMove: false,
 
       // Optional parameters
       direction:"vertical",
-      
-
-      /**
-       * ? ttp gaguna
-       */
       mousewheel: true,
 
       // If we need pagination
@@ -387,24 +378,6 @@ export default {
     }else{
       this.isButtonActive = true;
     }
-
-    // const self = this
-    // window.addEventListener("wheel", event => {
-    //     if(event.deltaY > 0){
-    //       if(self.readyToSlide){
-    //         self.swiper.slideNext();
-    //       }
-    //     }else{
-    //       if(self.readyToSlide){
-    //         self.swiper.slidePrev();
-    //       }
-    //     }
-    //     self.readyToSlide = false;
-    // });
-    // this.swiper.on("transitionEnd", ()=>{
-    //   this.readyToSlide = true;
-    //   console.log('transition');
-    // })
 
     // ALBUM
     var swiperAlbum = new Swiper(this.$refs.swiperAlbum, {
@@ -447,10 +420,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
 .containerPage {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -665,6 +639,7 @@ img {
 .buttonMore .icon {
   font-size: 40px;
   margin-right: 15px;
+  margin-left: 0px;
   padding: 0px 8px;
   display: flex;
   align-items: center;
